@@ -1,7 +1,10 @@
-﻿namespace EntityLayer.Concreate
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace EntityLayer.Concreate
 {
     public class Destination
     {
+        [Key]
         public int ID { get; set; }
         public string City { get; set; }
         public string DayNight { get; set; }
